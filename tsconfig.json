@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"declaration": false,
+		"outFile": "./docs/app.js",
+		"module": "amd",
+		"target": "es5",
+		"strictNullChecks": true,
+		"noImplicitAny": false,
+		"removeComments": true,
+		"preserveConstEnums": false,
+		"sourceMap": false
+	},
+	"include": [
+		"./src/*.ts"
+	]
+}

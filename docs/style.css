@@ -4,11 +4,16 @@ body{min-height:100%;height:100%;margin:0;}
 body > div{position:absolute;margin:auto;top:0;bottom:0;left:0;right:0;}
 canvas{width:100%;height:100%;display:block;}
 @media screen and (orientation:portrait){
-	html{font-size:4vmax;}
+	/*html{font-size:4vmax;}
 	body > div{width:75vmax;height:100vmax;}
 	#panels > li,.panel{width:12.5vmax;height:12.5vmax;}
 	h1{height:12.5vmax;}
-	.ruh{width:6.25vmax;height:12.5vmax;}
+	.ruh{width:6.25vmax;height:12.5vmax;}*/
+	html{font-size:4vmin;}
+	body > div{width:75vmin;height:100vmin;}
+	#panels > li,.panel{width:12.5vmin;height:12.5vmin;}
+	h1{height:12.5vmin;}
+	.ruh{width:6.25vmin;height:12.5vmin;}
 }
 @media screen and (orientation:landscape){
 	html{font-size:4vmin;}

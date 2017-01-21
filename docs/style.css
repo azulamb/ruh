@@ -1,6 +1,5 @@
 html{min-height:100%;height:100%;}
 body{min-height:100%;height:100%;margin:0;}
-/*640x1136 or 1080x1920*/
 body > div{position:absolute;margin:auto;top:0;bottom:0;left:0;right:0;}
 canvas{width:100%;height:100%;display:block;}
 @media screen and (orientation:portrait){
@@ -27,11 +26,14 @@ canvas{width:100%;height:100%;display:block;}
 body > div > *{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;box-sizing:border-box;}
 .head{height:12.5%;}
 .head > .panel{position:relative;overflow:hidden;background-color:#000;}
-.head > .panel.circle:before{content:"";display:block;border-radius:50%;background-color:#fff;width:80%;height:80%;top:0;bottom:0;left:0;right:0;position:absolute;margin:auto;transform-origin:50% 125%;overflow:hidden;}
-.head > .panel > .attr{width:40%;height:40%;background-color:#fff;position:absolute;margin:auto;transform-origin:50% 125%;left:0;right:0;border-radius:0 100% 100% 100%;}
-.head > .panel > .attr:before{content:"";background-color:#000;width:90%;height:90%;display:block;position:absolute;left:-85%;border-radius:0 0 0 100%;transform:rotate(5deg);}
-.head > .panel > .attr:after{content:"";width:100%;height:100%;display:block;border-radius:50%;position:absolute;overflow:hidden;}
-.head > .panel > .ar{transform:rotate(0deg);}
+.head > .panel > .battr{position:absolute;}
+.head > .panel > .cr{width:50%;height:75%;}
+.head > .panel > .cg{width:50%;height:100%;right:0;}
+.head > .panel > .cb{width:92.5%;height:50%;bottom:0;}
+.head > .panel > .attr{width:50%;height:50%;position:absolute;transform-origin:50% 100%;overflow:hidden;margin:auto;left:0;right:0;}
+.head > .panel > .attr:after{content:"";width:100%;height:100%;display:block;border-radius:100%;right:0;position:absolute;overflow:hidden;}
+.head > .panel > .attr.ar:after{width:200%;}
+.head > .panel > .ar{width:25%;height:50%;left:50%;right:auto;}
 .head > .panel > .ag{transform:rotate(120deg);}
 .head > .panel > .ab{transform:rotate(240deg);}
 .circle{border-radius:50%;}
@@ -43,8 +45,8 @@ body > div > *{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hi
 .overlay{}
 .overlay.hidden{height:0;}
 .cr,.ar:after{background-color:#ff4359;}
-.cg,.ag:after{background-color:#1c9fff;}
-.cb,.ab:after{background-color:#ffa80b;}
+.cg,.ag:after{background-color:#ffa80b;}
+.cb,.ab:after{background-color:#1c9fff;}
 
 .pn{background-position:0% 0%;}
 .pt{background-position:12.5% 0%;}

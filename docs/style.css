@@ -3,13 +3,6 @@ body{min-height:100%;height:100%;margin:0;}
 /*640x1136 or 1080x1920*/
 body > div{position:absolute;margin:auto;top:0;bottom:0;left:0;right:0;}
 canvas{width:100%;height:100%;display:block;}
-@media screen and (max-width:320px){/*iPhone*/
-	html{font-size:4vmin;}
-	body > div{width:300px;height:400px;}
-	#panels > li,.panel{width:50px;height:50px;}
-	h1{height:50px;}
-	.ruh{width:25px;height:50px;}
-}
 @media screen and (orientation:portrait){
 	html{font-size:4vmax;}
 	body > div{width:75vmax;height:100vmax;}
@@ -23,6 +16,13 @@ canvas{width:100%;height:100%;display:block;}
 	#panels > li,.panel{width:12.5vmin;height:12.5vmin;}
 	h1{height:12.5vmin;}
 	.ruh{width:6.25vmin;height:12.5vmin;}
+}
+@media screen and (max-width:320px){/*iPhone*/
+	html{font-size:4vmin;}
+	body > div{width:300px;height:400px;}
+	#panels > li,.panel{width:50px;height:50px;}
+	h1{height:50px;}
+	.ruh{width:25px;height:50px;}
 }
 body > div > *{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;box-sizing:border-box;}
 .head{height:12.5%;}
